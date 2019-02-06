@@ -54,6 +54,28 @@
   - repo: ContinuumIO/intake-hbase
     badges: travis, rtd, conda
 
+  - repo: informatics-lab/intake_geopandas
+    conda_channel: informaticslab
+    travis_dot: com
+    badges: travis, rtd, conda
+
+  - repo: informatics-lab/intake-dynamodb
+    conda_channel: informaticslab
+    conda_package: intake_dynamodb
+    travis_dot: com
+    badges: travis, rtd, conda
+
+  - repo: informatics-lab/intake-iris
+    conda_channel: informaticslab
+    conda_package: intake_iris
+    travis_dot: com
+    badges: travis, rtd, conda
+
+  - repo: informatics-lab/intake-s3-manifests
+    conda_channel: informaticslab
+    conda_package: intake_s3_manifests
+    travis_dot: com
+    badges: travis, rtd, conda
 
 - name: Associated packages
 
