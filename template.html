@@ -25,8 +25,8 @@
         </td>
           {% if 'travis' in package.badges %}
           <td align='left'>
-            <a href="https://travis-ci.org/{{ package.travis_project }}">
-              <img src="https://travis-ci.org/{{ package.travis_project }}.svg?branch=master">
+            <a href="https://travis-ci.{{ package.travis_dot }}/{{ package.travis_project }}">
+              <img src="https://travis-ci.{{ package.travis_dot }}/{{ package.travis_project }}.svg?branch=master">
             </a>
           </td>
           {% else %}

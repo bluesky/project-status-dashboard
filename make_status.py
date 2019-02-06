@@ -53,8 +53,10 @@ for section in config:
             package['appveyor_project'] = package['repo']
         if 'circleci' in package['badges'] and 'circleci_project' not in package:
             package['circleci_project'] = package['repo']
-        if 'travis' in package['badges'] and 'travis_project' not in package:
-            package['travis_project'] = package['repo']
+        if 'travis' in package['badges']:
+            if 'travis_project' not in package:
+                package['travis_project'] = package['repo']
+            package['travis_dot'] = package.get('travis_dot', 'org')
         if 'conda' in package['badges'] and 'conda_channel' not in package:
             package['conda_channel'] = 'intake'
 
