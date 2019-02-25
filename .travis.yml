@@ -23,10 +23,10 @@ install:
 script:
   - python make_status.py
   - mkdir deploy
-  - mv status.html deploy/
+  - mv status.html deploy/index.html
   - cp static/style.css deploy/
   - git checkout gh-pages
   - cp deploy/* .
-  - git add status.html style.css
+  - git add index.html style.css
   - git commit -m "Updated dashboard" || true
   - if [[ $TRAVIS_EVENT_TYPE != pull_request && $TRAVIS_BRANCH == master ]]; then git push -q -f https://$GITHUB_USER:$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG gh-pages; fi
