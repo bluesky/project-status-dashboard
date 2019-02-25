@@ -2,56 +2,54 @@
 
   packages:
 
-  - repo: ContinuumIO/intake
+  - repo: intake/intake
     badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
-    pypi_name: intake
-    rtd_name: intake
     appveyor_project: jsignell/intake
 
-  - repo: ContinuumIO/intake-xarray
+  - repo: intake/intake-xarray
     badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
     appveyor_project: jsignell/intake-xarray
 
-  - repo: ContinuumIO/intake-parquet
+  - repo: intake/intake-parquet
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-spark
+  - repo: intake/intake-spark
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-accumulo
+  - repo: intake/intake-accumulo
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-sql
+  - repo: intake/intake-sql
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-elasticsearch
+  - repo: intake/intake-elasticsearch
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-avro
+  - repo: intake/intake-avro
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-astro
+  - repo: intake/intake-astro
     badges: travis, rtd, pypi, conda, conda-forge
 
-  - repo: ContinuumIO/intake-netflow
+  - repo: intake/intake-netflow
     badges: travis, rtd, conda
 
-  - repo: ContinuumIO/intake-mongo
+  - repo: intake/intake-mongo
     badges: travis, rtd, conda
 
-  - repo: ContinuumIO/intake-postgres
+  - repo: intake/intake-postgres
     badges: travis, rtd, conda
 
-  - repo: ContinuumIO/intake-odbc
+  - repo: intake/intake-odbc
     badges: travis, rtd, conda
 
-  - repo: ContinuumIO/intake-solr
+  - repo: intake/intake-solr
     badges: travis, rtd, conda
 
-  - repo: ContinuumIO/intake-splunk
+  - repo: intake/intake-splunk
     badges: travis, rtd, conda
 
-  - repo: ContinuumIO/intake-hbase
+  - repo: intake/intake-hbase
     badges: travis, rtd, conda
 
   - repo: informatics-lab/intake_geopandas
