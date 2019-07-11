@@ -1,108 +1,74 @@
-- name: Core and Coordinated packages
+- name: Bluesky Core and Coordinated packages
 
   packages:
 
-  - repo: intake/intake
-    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
-    appveyor_project: jsignell/intake
+  - repo: bluesky/bluesky
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-xarray
-    badges: travis, appveyor, rtd, pypi, conda, conda-forge, defaults
-    appveyor_project: jsignell/intake-xarray
+  - repo: bluesky/ophyd
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-parquet
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/event-model
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-spark
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/databroker
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-accumulo
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/intake-bluesky
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-sql
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/suitcase-cookiecutter
+    badges: travis, codecov
 
-  - repo: intake/intake-elasticsearch
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/suitcase-utils
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-avro
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/suitcase-csv
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-astro
-    badges: travis, rtd, pypi, conda, conda-forge
+  - repo: bluesky/suitcase-jsonl
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-netflow
-    badges: travis, rtd, conda
+  - repo: bluesky/suitcase-json-metadata
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-mongo
-    badges: travis, rtd, conda
+  - repo: bluesky/suitcase-mongo
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-postgres
-    badges: travis, rtd, conda
+  - repo: bluesky/suitcase-msgpack
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-odbc
-    badges: travis, rtd, conda
+  - repo: bluesky/suitcase-specfile
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-solr
-    badges: travis, rtd, conda
+  - repo: bluesky/suitcase-tiff
+    badges: travis, codecov, pypi
 
-  - repo: intake/intake-splunk
-    badges: travis, rtd, conda
+  - repo: bluesky/bluesky-kafka
+    badges: travis, codecov
 
-  - repo: intake/intake-hbase
-    badges: travis, rtd, conda
+  - repo: bluesky/bluesky-browser
+    badges: travis, codecov, pypi
 
-  - repo: informatics-lab/intake_geopandas
-    conda_channel: informaticslab
-    travis_dot: com
-    badges: travis, rtd, conda
+  - repo: bluesky/bluesky-ui
+    badges: travis, codecov
 
-  - repo: informatics-lab/intake-dynamodb
-    conda_channel: informaticslab
-    conda_package: intake_dynamodb
-    travis_dot: com
-    badges: travis, rtd, conda
-
-  - repo: informatics-lab/intake-iris
-    conda_channel: informaticslab
-    conda_package: intake_iris
-    travis_dot: com
-    badges: travis, rtd, conda
-
-  - repo: informatics-lab/intake-s3-manifests
-    conda_channel: informaticslab
-    conda_package: intake_s3_manifests
-    travis_dot: com
-    badges: travis, rtd, conda
-
-- name: Associated packages
+- name: Related Packages
 
   packages:
 
-  - repo: dask/dask
-    appveyor_project: daskdev/dask
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
+  - repo: caproto/caproto
+    badges: travis, codecov, pypi
 
-  - repo: pandas-dev/pandas
-    badges: travis, appveyor, codecov, rtd, pypi, conda-forge, defaults
+  - repo: slaclab/pydm
+    badges: codecov, pypi
 
-  - repo: pydata/xarray
-    appveyor_project: shoyer/xray
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
+  - repo: slaclab/skywalker
+    badges: travis, codecov, pypi
 
-  - repo: pyviz/hvplot
-    conda_channel: pyviz
-    appveyor_project: philippjfr/hvplot
-    badges: travis, appveyor, coveralls, rtd, pypi, conda, conda-forge, defaults
+  - repo: pcdshub/typhon
+    badges: travis, codecov, pypi
 
-  - repo: zarr-developers/zarr
-    badges: travis, appveyor, coveralls, rtd, pypi, conda-forge, defaults
-
-  - repo: Unidata/netcdf4-python
-    pypi_name: netCDF4
-    conda_package: netCDF4
-    appveyor_project: jswhit/netcdf4-python
-    badges: travis, appveyor, pypi, conda-forge, defaults
-
-  - repo: dask/fastparquet
-    badges: travis, rtd, pypi, conda-forge, defaults
+  - repo: ronpandolfi/Xi-cam
+    pypi_name: xicam
+    badges: pypi

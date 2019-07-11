@@ -5,16 +5,14 @@
   </head>
   <body>
     <div id="wrapper">
-    <h1>Intake Project Dashboard</h1>
+    <h1>Bluesky Project Dashboard</h1>
     {% for section in config %}
     <h2>{{ section.name }}</h2>
     <table align='center'>
       <tr>
         <th>Name</th>
         <th>Travis</th>
-        <th>AppVeyor</th>
         <th>Coverage</th>
-        <th>ReadTheDocs</th>
         <th>PyPI</th>
         <th>Conda</th>
       </tr>
@@ -32,15 +30,6 @@
           {% else %}
           <td align='center'>-</td>
           {% endif %}
-          {% if 'appveyor' in package.badges %}
-          <td align='left'>
-            <a href="https://ci.appveyor.com/project/{{ package.appveyor_project }}?branch=master">
-              <img src="https://img.shields.io/appveyor/ci/{{ package.appveyor_project }}/master.svg">
-            </a>
-          </td>
-          {% else %}
-          <td align='center'>-</td>
-          {% endif %}
           {% if 'coveralls' in package.badges %}
           <td align='left'>
             <a href="https://coveralls.io/r/{{ package.repo }}?branch=master">
@@ -51,15 +40,6 @@
           <td align='left'>
             <a href="https://codecov.io/gh/{{ package.repo }}?branch=master">
               <img src="https://codecov.io/gh/{{ package.repo }}/branch/master/graph/badge.svg">
-            </a>
-          </td>
-          {% else %}
-          <td align='center'>-</td>
-          {% endif %}
-          {% if 'rtd' in package.badges %}
-          <td align='left'>
-            <a href="https://readthedocs.org/projects/{{ package.rtd_name }}/?badge=latest">
-              <img src="https://readthedocs.org/projects/{{ package.rtd_name }}/badge/?version=latest">
             </a>
           </td>
           {% else %}
