@@ -3,16 +3,16 @@
   packages:
 
   - repo: bluesky/bluesky
-    badges: travis, codecov, pypi
+    badges: travis, codecov, pypi, conda-forge
 
   - repo: bluesky/ophyd
-    badges: travis, codecov, pypi
+    badges: travis, codecov, pypi, conda-forge
 
   - repo: bluesky/event-model
-    badges: travis, codecov, pypi
+    badges: travis, codecov, pypi, conda-forge
 
   - repo: bluesky/databroker
-    badges: travis, codecov, pypi
+    badges: travis, codecov, pypi, conda-forge
 
   - repo: bluesky/intake-bluesky
     badges: travis, codecov, pypi
@@ -58,7 +58,7 @@
   packages:
 
   - repo: caproto/caproto
-    badges: travis, codecov, pypi
+    badges: travis, codecov, pypi, conda-forge
 
   - repo: slaclab/pydm
     badges: codecov, pypi
