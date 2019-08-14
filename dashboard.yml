@@ -72,3 +72,6 @@
   - repo: ronpandolfi/Xi-cam
     pypi_name: xicam
     badges: pypi
+
+  - repo: BCDA-APS/apstools
+    badges: travis, codecov, pypi, conda-forge
